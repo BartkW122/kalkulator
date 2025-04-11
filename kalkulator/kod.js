@@ -193,7 +193,7 @@ przyciski.forEach(item =>{
                 wynik = flout_liczba1/flout_liczba2;
 
                 if(wynik!=0){
-                    dzialanie=`${wynik}`
+                    dzialanie=`${wynik.toFixed(5)}`
                 }else{
                     dzialanie=""
                 }
