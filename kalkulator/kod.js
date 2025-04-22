@@ -126,7 +126,45 @@ przyciski.forEach(item =>{
 
                 let tab=dzialanie.split('')
                
+<<<<<<< HEAD
                 lizcenie(tab,'÷');
+=======
+                
+                let index_plus=tab.indexOf("÷");
+               
+
+                let liczba1 =tab.splice (0,index_plus);
+
+                let str_1= liczba1.join(',');
+
+                let flout_liczba1=parseFloat(str_1.replace(/,/g,''))
+
+                console.log("po operacji 1:"+flout_liczba1)
+                
+
+                let wilekosc_tab=tab.length
+                
+
+                let liczba2 =tab.splice (1,wilekosc_tab-2);
+
+                let str_2= liczba2.join(',');
+
+                let flout_liczba2=parseFloat(str_2.replace(/,/g,''))
+
+                console.log("po operacji 2:"+flout_liczba2)
+
+                wynik = flout_liczba1/flout_liczba2;
+
+                if(wynik!=0){
+                    dzialanie=`${wynik.toFixed(5)}`
+                }else{
+                    dzialanie=""
+                }
+                
+                ekran.innerHTML=dzialanie
+                
+
+>>>>>>> 8bcf24a9d7acfa8e24b2a0b02a2df1ab2cb310d7
             }
         }
 
