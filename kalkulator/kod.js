@@ -5,7 +5,7 @@ let wynik=0;
 console.log(przyciski)
 console.log(ekran)
 
-function lizcenie(tablica,znak){
+function lizcenie(znak){
     
     let tab=dzialanie.split('')
                
@@ -89,9 +89,8 @@ przyciski.forEach(item =>{
 
                 //Dzielenie na liczby
 
-                let tab=dzialanie.split('')
                
-                lizcenie(tab,'+');
+                lizcenie('+');
 
             }
 
@@ -101,11 +100,11 @@ przyciski.forEach(item =>{
 
                 //Dzielenie na liczby
 
-                let tab=dzialanie.split('')
+               
                
                 
                 
-                lizcenie(tab,'-');
+                lizcenie('-');
             }
 
             if(dzialanie.includes('x')){
@@ -114,9 +113,9 @@ przyciski.forEach(item =>{
 
                 //Dzielenie na liczby
 
-                let tab=dzialanie.split('')
                
-                lizcenie(tab,'x');
+               
+                lizcenie('x');
 
             }
 
@@ -126,9 +125,9 @@ przyciski.forEach(item =>{
 
                 //Dzielenie na liczby
 
-                let tab=dzialanie.split('')
+                
                
-                lizcenie(tab,'÷');
+                lizcenie('÷');
             }
         }
 
